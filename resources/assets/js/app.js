@@ -11,12 +11,16 @@ window.Vue = require('vue');
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import VuePlyr from 'vue-plyr';
 
-import store from './store'
+import store from './store';
 
-import 'vuetify/dist/vuetify.min.css'
+import 'vuetify/dist/vuetify.min.css';
+import 'vue-plyr/dist/vue-plyr.css';
 
 
+
+Vue.use(VuePlyr)
 Vue.use(Vuetify)
 
 /**
