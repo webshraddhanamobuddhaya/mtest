@@ -57395,6 +57395,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 window.addEventListener('resize', function () {
     if (!document.fullscreenElement) {
@@ -57443,37 +57447,52 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-        _c("div", { staticClass: "panel panel-default" }, [
-          _c("div", { staticClass: "panel-heading" }, [
-            _vm._v("Example Component")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "panel-body" }, [
-            _vm._v(
-              "\n                        " +
-                _vm._s(_vm.getNumber) +
-                "\n                    "
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { ref: "sasaa" },
-            [
-              _c("youtube", {
-                ref: "ytwidth",
-                attrs: {
-                  "video-id": _vm.videoId,
-                  "player-width": "100%",
-                  "player-height": "auto"
-                }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("h1", [_vm._v("Ok...")])
-        ])
+        _c(
+          "div",
+          { staticClass: "panel panel-default" },
+          [
+            _c("div", { staticClass: "panel-heading" }, [
+              _vm._v("Example Component")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "panel-body" }, [
+              _vm._v(
+                "\n                        " +
+                  _vm._s(_vm.getNumber) +
+                  "\n                    "
+              )
+            ]),
+            _vm._v(" "),
+            _c("vue-plyr", [
+              _c("div", { staticClass: "plyr__video-embed" }, [
+                _c("iframe", {
+                  attrs: {
+                    src:
+                      "https://www.youtube.com/embed/bTqVqk7FSmY?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1",
+                    allowfullscreen: "",
+                    allowtransparency: "",
+                    allow: "autoplay"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { ref: "sasaa" },
+              [
+                _c("youtube", {
+                  ref: "ytwidth",
+                  attrs: { "video-id": _vm.videoId, "player-width": "100%" }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("h1", [_vm._v("Ok...")])
+          ],
+          1
+        )
       ])
     ])
   ])

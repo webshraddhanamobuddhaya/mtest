@@ -10,13 +10,17 @@
                     </div>
                     <!-- <plyr-youtube :id="youtubeID" :pe="false" /> -->
                     <!-- youtube div element -->
-<!-- youtube div element -->
-<!-- <vue-plyr>
-  <div data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
-</vue-plyr> -->
+<vue-plyr>
+  <div class="plyr__video-embed">
+    <iframe
+      src="https://www.youtube.com/embed/bTqVqk7FSmY?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+      allowfullscreen allowtransparency allow="autoplay">
+    </iframe>
+  </div>
+</vue-plyr>
 <div ref="sasaa">
 
-<youtube :video-id="videoId" player-width="100%" player-height="auto" ref="ytwidth"></youtube>
+<youtube :video-id="videoId" player-width="100%" ref="ytwidth"></youtube>
 </div>
 <h1>Ok...</h1>
                 </div>
