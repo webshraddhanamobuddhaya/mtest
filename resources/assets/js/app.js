@@ -12,6 +12,7 @@ window.Vue = require('vue');
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import VuePlyr from 'vue-plyr';
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
 import store from './store';
 
@@ -19,7 +20,7 @@ import 'vuetify/dist/vuetify.min.css';
 import 'vue-plyr/dist/vue-plyr.css';
 
 
-
+Vue.use(VueYouTubeEmbed)
 Vue.use(VuePlyr)
 Vue.use(Vuetify)
 

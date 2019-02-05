@@ -11,9 +11,13 @@
                     <!-- <plyr-youtube :id="youtubeID" :pe="false" /> -->
                     <!-- youtube div element -->
 <!-- youtube div element -->
-<vue-plyr>
+<!-- <vue-plyr>
   <div data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
-</vue-plyr>
+</vue-plyr> -->
+<div ref="sasaa">
+
+<youtube :video-id="videoId" player-width="100%" player-height="auto" ref="ytwidth"></youtube>
+</div>
 <h1>Ok...</h1>
                 </div>
             </div>
@@ -46,8 +50,14 @@ window.addEventListener('resize', function() {
             getNumber(){
                 return this.$store.getters.getNumber;
             },
-            youtubeID(){
-                return 'zGhG5Y22dwY';
+            videoId(){
+                return 'GsgVdNKhx7c';
+            },
+            videoHeight(){
+                // let w_width = this.$refs.ytwidth.clientWidth;
+                // let w_height = w_width*9/16;
+                console.log(this.$refs.sasaa);
+                return 200;
             }
         }
     }
