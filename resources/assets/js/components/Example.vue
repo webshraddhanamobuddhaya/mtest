@@ -10,7 +10,7 @@
                     </div>
                     <!-- <plyr-youtube :id="youtubeID" :pe="false" /> -->
                     <!-- youtube div element -->
-<vue-plyr>
+<!-- <vue-plyr>
   <div class="plyr__video-embed">
     <iframe
       src="https://www.youtube.com/embed/bTqVqk7FSmY?iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
@@ -21,7 +21,28 @@
 <div ref="sasaa">
 
 <youtube :video-id="videoId" player-width="100%" ref="ytwidth"></youtube>
+</div> -->
+<div class="container">
+<iframe src="//www.youtube.com/embed/yCOY82UdFrw" 
+frameborder="0" allowfullscreen class="video"></iframe>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1>Ok...</h1>
                 </div>
             </div>
@@ -66,3 +87,18 @@ window.addEventListener('resize', function() {
         }
     }
 </script>
+<style>
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
