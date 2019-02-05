@@ -22,6 +22,21 @@
 </template>
 
 <script>
+window.addEventListener('resize', function() {
+  if (!document.fullscreenElement) {
+    return;
+  }
+
+  var minimumScreenSize = 0.33;
+  var screenArea = screen.width * screen.height;
+  var windowArea = window.outerHeight * window.outerWidth;
+
+  // If the size of the window relative to the screen is less than a third,
+  // let's assume we're in PiP and exit fullscreen to prevent Auto PiP.
+  if ((windowArea / screenArea) < minimumScreenSize) {
+    document.exitFullscreen();
+  }
+});
     export default {
         
         mounted() {
